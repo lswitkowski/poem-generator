@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +9,11 @@
 <body><div class="container">
   <header>  <h1>Welcome to the Poem Generator</h1>
     <main>
-<form>
+<form id="poem-generator-form">
     <input type="text" class="input-field" placeholder="Enter the subject of the poem" autofocus required autocomplete="off"/>
     <input type="submit" class="submit"/>
 </form>
-<div class="poem">
-    Demain, dès l’aube, à l’heure où blanchit la campagne,<br/>
-    Je partirai. Vois-tu, je sais que tu m’attends.
+<div class="poem" id="poem">
 </div>
 
     </main>
