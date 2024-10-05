@@ -3,7 +3,11 @@ body{
     text-align: center;
     color: #351b01;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+background-image: url('images/banana.png'); 
+background-color:#f2d363;
+ background-blend-mode: multiply;
+ }
+
 h1{
     text-align: center;
   font-weight: 800;
