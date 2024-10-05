@@ -1,5 +1,7 @@
 function generatePoem(event){
     event.preventDefault();
+let poemElement = document.querySelector("#poem");
+poemElement.innerHTML = (`<span class="blink">finding inspiration...</span>`);
 let instructionsInput = document.querySelector("#input-field");
 let key= "65ae2e8ao4f01409ca53644a9atfcbed";
  let prompt = `User instructions: Generate a poem about ${instructionsInput.value}`;
@@ -16,6 +18,8 @@ function displayPoem(response) {
     delay: 12,
     cursor: "",
   });
+let poemElement=document.querySelector("#poem");
+poemElement.classList.remove("hidden");
 }
 
 let poemFormElement= document.querySelector("#poem-generator-form");
